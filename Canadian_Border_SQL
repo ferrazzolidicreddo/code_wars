@@ -1,0 +1,5 @@
+SELECT
+  name    AS Name,
+  country AS Country
+FROM travelers
+WHERE Country NOT IN ('Canada','Mexico', 'USA')
