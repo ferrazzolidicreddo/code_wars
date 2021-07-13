@@ -1,0 +1,7 @@
+SELECT DISTINCT
+  departments.id,
+  departments.name
+FROM departments, sales
+WHERE EXISTS
+(SELECT departments.id, departments.name WHERE departments.id = sales.department_id AND price >= 98.00)
+ORDER BY departments.id ASC
