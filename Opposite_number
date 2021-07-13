@@ -1,0 +1,3 @@
+SELECT
+ -(opposite.number) AS res
+FROM opposite
