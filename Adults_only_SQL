@@ -1,0 +1,5 @@
+SELECT
+  name  AS name,
+  age   AS age
+FROM users
+WHERE age >= 18
