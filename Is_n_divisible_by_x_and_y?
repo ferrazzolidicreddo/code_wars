@@ -1,0 +1,13 @@
+WITH base AS
+  (SELECT
+   id,
+   n    AS number,
+   x*y  AS num
+  FROM kata)
+SELECT
+  id,
+  (CASE
+    WHEN MOD(number, num) != 0 THEN 1=2
+    ELSE 1=1
+  END) AS res
+FROM base
