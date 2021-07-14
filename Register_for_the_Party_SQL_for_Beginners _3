@@ -1,0 +1,4 @@
+INSERT INTO participants
+VALUES ('André', 36, 'true');
+
+SELECT * FROM participants;
